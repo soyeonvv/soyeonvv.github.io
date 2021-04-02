@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나를 소개하기</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="index.html">자기소개</a></li>
+            <li role="presentation"><a href="diary.html">일기장</a></li>
+            <li role="presentation"><a href="goal.html">목표</a></li>
+        </ul>
+    <h1>박소연을 소개합니다.</h1>
+    <h2>컴퓨터공학과 2학년</h2>
+    <form action="introduce" method="POST">
+        <div class="form-group">
+            <label for="userid">아이디: </label>
+            <input type="text" class="form-control" id="userid" name="id" placeholder="아이디를 입력하세요" value="soyeon">
+        </div>
+        <div class="form-group">
+            <label for="userpw">비밀번호: </label>
+            <input type="password" class="form-control" id="userpw" name="password" placeholder="비밀번호를 입력하세요">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-warning">제출</button>
+        </div>
+    </form>
+   
+    <h2>날 대표하는 사진</h2>
+    <img src="https://postfiles.pstatic.net/MjAyMDA3MTVfMjY1/MDAxNTk0ODE0NzY2NTM4.B6j2_ouuq0CPq-bY-L_6DOmwlKX3KtdCcy0I5M2i7sgg.pa1iNaKZlzYNzplqEg76SCyU1Kb-frIxptjQ7-MDUq0g.JPEG.15soyeon/IMG_1343.jpg?type=w966"
+    alt="sherlock photo" height="300px" width="300px"><br>
+    -집 앞 공원에서 찍은 나의 반려견 셜록이♡
+
+    <h2>내가 제일 좋아하는 노래</h2>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/SV6bIRBiPeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h2>나의 일기장</h2>
+    <form action="my-page" method="GET">
+        <div>
+            <label for="title">제목: </label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="emotion">나의 기분: </label>
+            <select name="emotion" id="emotion">
+                <option value="happy">행복</option>
+                <option value="angry">화남</option>
+                <option value="sad">슬픔</option>
+            </select>
+        </div>
+        <div>
+            <label for="diary"></label>
+            <textarea name="diary" id="diary" cols="70" rows="15"></textarea>
+        </div>
+        <button type="submit">제출</button>
+    </form>
+   
+    <h2>올해 이루고 싶은 것들</h2>
+    <ol>
+        <li>멋사 활동 열심히 하기</li>
+        <li>한 달에 한 권 책 읽기</li>
+        <li>평일에 매일 운동하기</li>
+        <li>학점 작년보다 높게 받기</li>
+    </ol><hr>
+    <a href="https://github.com/soyeonvv" target="_blank">나의 깃 주소</a>
+    </div>
+</body>
+</html>

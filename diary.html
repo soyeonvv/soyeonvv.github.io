@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="index.html">자기소개</a></li>
+            <li role="presentation" class="active"><a href="diary.html">일기장</a></li>
+            <li role="presentation"><a href="goal.html">목표</a></li>
+        </ul>
+    <form action="my-page" method="GET">
+        <h2>나의 일기장</h2>
+        <div>
+            <label for="title">제목: </label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="emotion">나의 기분: </label>
+            <select name="emotion" id="emotion">
+                <option value="happy">행복</option>
+                <option value="angry">화남</option>
+                <option value="sad">슬픔</option>
+            </select>
+        </div>
+        <div>
+            <label for="diary"></label>
+            <textarea name="diary" id="diary" cols="70" rows="15"></textarea>
+        </div>
+        <button type="submit">제출</button>
+    </form>
+    </div>
+</body>
+</html>
